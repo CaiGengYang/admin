@@ -1,0 +1,80 @@
+-------------- User Roles --------------
+user
+	display forum posts (in the topics that user has permissions too) - main page
+	reply to forum posts (in the topics that user has permissions too)
+	create forum posts (in the topics that user has permissions too)
+	modify user info (only able to modify the user that is logged in)
+	deactivate/reactivate account (only with password)
+	request password reset
+
+moderator
+	all user items
+	approve posts
+	delete/hide posts (that have been flagged)
+	unflag flagged posts
+	put users on probation (regular users)
+	take users off probation
+	mark forum posts as closed
+
+admin
+	all user and moderator items
+	ban users
+	set user level (between moderator & user roles)
+	allow users to access topics
+	create users
+	reset moderator (but not moderator) passwords
+
+owner
+	all user, moderator & admin items
+	add topics
+	de-activate topics (make them no longer useable)
+	set user level (between all user roles)
+
+
+-------------- Role Menu Items --------------
+user
+	forum (main forum functionality)
+	view profile
+		update profile
+	reports menu
+
+moderator
+	all user items
+	actions menu
+
+admin
+	all user and moderator items
+
+owner
+	all user, moderator and admin items
+
+
+-------------- Role Reports --------------
+user
+	basic profile report (only for currently logged in user)
+		number of posts
+			total, last month(s), last year
+		active since
+		account status
+		account type
+	actions taken by user (only for currently logged in user)
+
+moderator
+	all user items
+	posts that need approval
+	posts that have been flagged
+	users on probation (current/have been on)
+
+admin
+	all user and moderator items
+	actions taken by moderators
+
+owner
+	all user, moderator and admin items
+	actions taken by admin's
+
+
+
+
+
+----------------------------- End of File -----------------------------

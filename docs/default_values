@@ -1,0 +1,77 @@
+List of default data that should be put into the database on creation (per table).
+
+user_table (auto create the owner account)
+	user_name: owner
+	pass: owned_pass
+	real_name: owner
+	time_zone: +0
+	email_address: email@email.com
+	on_probation: False
+	is_banned: False
+
+forum_role_table
+	role_name:
+		user
+		moderator
+		admin
+
+user_to_forum_role_table
+	user_id: user id for auto created owner account
+	forum_role_id: role_id for owner
+
+forum_topic_table
+	topic_name: "General"
+	is_public: True
+	is_active: True
+
+forum_action_table
+	action_name:
+		log_in
+		log_out
+		flag_post
+		unflag_post
+		ban_user
+		remove_ban (from user)
+		close_post
+		open_post
+		hide_post
+		restore_post (un-hide)
+		create_account
+		deactivate_account
+		reactivate_account
+		add_moderator
+		del_moderator
+		add_admin
+		del_admin
+		transfer_ownership
+
+forum_log_table
+	action_id: action_id for creating account
+	action_date: today's date
+	user_id: user_id of owner
+	user_acted_on: user_id of owner
+
+forum_settings_table
+	use_probation: False
+	num_proby_posts: 0
+	use_moderators: False
+	require_birth_date: True
+	auto_logout: True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ---------------------------- End of file ----------------------------
